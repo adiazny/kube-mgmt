@@ -8,12 +8,12 @@ registries:
   create:
     name: kube-mgmt-registry
     host: "0.0.0.0"
-    hostPort: "5000"
+    hostPort: "5001"
   config: |
     mirrors:
-      "localhost:5000":
+      "localhost:5001":
         endpoint:
-          - http://kube-mgmt-registry:5000
+          - http://kube-mgmt-registry:5001
 ports:
   - port: 8080:80
     nodeFilters:

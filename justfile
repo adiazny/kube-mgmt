@@ -8,7 +8,7 @@ defaul:
   @just --list
 
 @_skaffold-ctx:
-  skaffold config set default-repo localhost:5000
+  skaffold config set default-repo kube-mgmt-registry:5001
 
 # build and publish image to release regisry, create chart archive
 build-release:
